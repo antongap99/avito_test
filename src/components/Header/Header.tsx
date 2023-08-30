@@ -1,15 +1,15 @@
-import { FC } from 'react';
-import style from './Header.module.css';
+import { CSSProperties, FC } from 'react';
+import { Header as HeaderUI } from 'antd/es/layout/layout';
 
 interface Props {
   children?: FC;
+  style?: CSSProperties
 }
 
-export const Header = (): JSX.Element=> {
+export const Header = ({style}:Props): JSX.Element=> {
   return (
-    <div className = {style.container}>
-
-  </div>)
+    <HeaderUI style={style}/>
+  )
 };
 
 

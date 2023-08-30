@@ -1,13 +1,12 @@
+import { Applayout } from './views/layout';
 
-import './App.css'
-import { Header } from './components/Header/Header';
 
 function App() {
-  return (
-    <>
-      <Header/>
-    </>
-  )
+
+
+	return (
+		<Applayout/>
+	)
 }
 
 export default App
